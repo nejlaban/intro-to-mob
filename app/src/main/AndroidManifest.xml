@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ConverterActivity"></activity>
-        <activity android:name=".ScientificActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".DashboardActivity">
             <intent-filter>

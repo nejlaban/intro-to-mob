@@ -4,46 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/maxresdefault"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/bt9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="13dp"
-        android:layout_marginStart="13dp"
-        android:text="9"
-        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_centerVertical="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:text="9" />
 
     <Button
         android:id="@+id/bt8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="8"
         android:layout_alignBaseline="@+id/bt9"
         android:layout_alignBottom="@+id/bt9"
+        android:layout_toEndOf="@+id/bt9"
         android:layout_toRightOf="@+id/bt9"
-        android:layout_toEndOf="@+id/bt9" />
+        android:text="8" />
 
     <Button
         android:id="@+id/bt7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="7"
         android:layout_alignBaseline="@+id/bt8"
         android:layout_alignBottom="@+id/bt8"
+        android:layout_toEndOf="@+id/bt8"
         android:layout_toRightOf="@+id/bt8"
-        android:layout_toEndOf="@+id/bt8" />
+        android:text="7" />
 
     <Button
         android:id="@+id/bt6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/bt9"
-        android:layout_alignStart="@+id/bt9"
         android:layout_below="@+id/bt9"
+        android:layout_alignStart="@+id/bt9"
+        android:layout_alignLeft="@+id/bt9"
         android:layout_marginTop="12dp"
         android:text="6" />
 
@@ -51,8 +52,8 @@
         android:id="@+id/bt5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/bt8"
         android:layout_alignStart="@+id/bt8"
+        android:layout_alignLeft="@+id/bt8"
         android:layout_alignTop="@+id/bt6"
         android:text="5" />
 
@@ -60,8 +61,8 @@
         android:id="@+id/bt4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/bt7"
         android:layout_alignStart="@+id/bt7"
+        android:layout_alignLeft="@+id/bt7"
         android:layout_alignTop="@+id/bt5"
         android:text="4" />
 
@@ -69,9 +70,9 @@
         android:id="@+id/bt3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/bt6"
-        android:layout_alignStart="@+id/bt6"
         android:layout_below="@+id/bt6"
+        android:layout_alignStart="@+id/bt6"
+        android:layout_alignLeft="@+id/bt6"
         android:layout_marginTop="13dp"
         android:text="3" />
 
@@ -79,8 +80,8 @@
         android:id="@+id/bt2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/bt5"
         android:layout_alignStart="@+id/bt5"
+        android:layout_alignLeft="@+id/bt5"
         android:layout_alignTop="@+id/bt3"
         android:text="2" />
 
@@ -88,8 +89,8 @@
         android:id="@+id/bt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/bt4"
         android:layout_alignStart="@+id/bt4"
+        android:layout_alignLeft="@+id/bt4"
         android:layout_alignTop="@+id/bt2"
         android:text="1" />
 
@@ -97,9 +98,9 @@
         android:id="@+id/btClear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/bt3"
-        android:layout_alignStart="@+id/bt3"
         android:layout_below="@+id/bt3"
+        android:layout_alignStart="@+id/bt3"
+        android:layout_alignLeft="@+id/bt3"
         android:layout_marginTop="13dp"
         android:text="Clear" />
 
@@ -107,8 +108,8 @@
         android:id="@+id/bt0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/bt2"
         android:layout_alignStart="@+id/bt2"
+        android:layout_alignLeft="@+id/bt2"
         android:layout_alignTop="@+id/btClear"
         android:text="0" />
 
@@ -116,9 +117,9 @@
         android:id="@+id/btEquals"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/bt0"
-        android:layout_alignLeft="@+id/bt1"
         android:layout_alignStart="@+id/bt1"
+        android:layout_alignLeft="@+id/bt1"
+        android:layout_alignBottom="@+id/bt0"
         android:text="=" />
 
     <Button
@@ -153,8 +154,8 @@
         android:id="@+id/btSubtraction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/btEquals"
         android:layout_alignTop="@+id/btEquals"
+        android:layout_alignBottom="@+id/btEquals"
         android:layout_toEndOf="@+id/btEquals"
         android:layout_toRightOf="@+id/btEquals"
         android:text="-" />
@@ -164,23 +165,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/btDivision"
-        android:layout_alignEnd="@+id/btDivision"
-        android:layout_alignLeft="@+id/bt9"
-        android:textSize="20sp"
-        android:layout_alignRight="@+id/btDivision"
         android:layout_alignStart="@+id/bt9"
+        android:layout_alignLeft="@+id/bt9"
+        android:layout_alignEnd="@+id/btDivision"
+        android:layout_alignRight="@+id/btDivision"
         android:layout_marginBottom="39dp"
-        android:layout_toEndOf="@+id/bt7" />
+        android:layout_marginRight="28dp"
+        android:layout_toEndOf="@+id/bt7"
+        android:background="#ffffff"
+
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/TextViewResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/TextViewControl"
-        android:layout_alignEnd="@+id/TextViewControl"
-        android:layout_alignLeft="@+id/bt9"
-        android:textSize="16sp"
-        android:layout_alignRight="@+id/TextViewControl"
         android:layout_alignStart="@+id/bt9"
-        android:layout_marginBottom="41dp" />
+        android:layout_alignLeft="@+id/bt9"
+        android:layout_alignEnd="@+id/TextViewControl"
+        android:layout_alignRight="@+id/TextViewControl"
+        android:layout_marginBottom="41dp"
+        android:background="#ffffff"
+        android:textSize="16sp" />
 </RelativeLayout>

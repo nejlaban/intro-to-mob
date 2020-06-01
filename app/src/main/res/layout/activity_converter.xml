@@ -4,43 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".ConverterActivity">
 
     <TextView
         android:id="@+id/bam"
         android:layout_width="match_parent"
         android:layout_height="150dp"
+        android:background="#ff9900"
+        android:fontFamily="sans-serif"
+        android:textColor="#000000"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:fontFamily="sans-serif"
-        android:background="#ff9900"
-        android:textColor="#000000"
 
         ></TextView>
 
     <EditText
         android:id="@+id/dollar"
-        android:layout_below="@id/bam"
-        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="150dp"
+        android:layout_below="@id/bam"
+        android:layout_marginTop="20dp"
+        android:background="#ff9900"
+        android:fontFamily="sans-serif"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:fontFamily="sans-serif"
-        android:background="#ff9900"
 
         ></EditText>
 
-<Button
-    android:id="@+id/button"
-    android:onClick="clicked"
-    android:layout_width="100dp"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/dollar"
-    android:layout_centerInParent="true"
-    android:layout_marginTop="20dp"
-    android:text="Convert"
-    android:background="#ff9900"
-    ></Button>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dollar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="#4a86e8"
+        android:onClick="clicked"
+        android:text="Convert"></Button>
 
 </RelativeLayout>

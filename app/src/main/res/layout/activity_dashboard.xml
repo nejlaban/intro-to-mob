@@ -4,27 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/poz"
     tools:context=".DashboardActivity">
 
     <Button
         android:id="@+id/nextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#4a86e8"
         android:text="simple calculator"
+        app:layout_constraintBottom_toTopOf="@+id/secondButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="231dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.724"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/secondButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="208dp"
+        android:layout_marginBottom="252dp"
+        android:background="#4a86e8"
         android:text="Currency converter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintHorizontal_bias="0.514"
+
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
